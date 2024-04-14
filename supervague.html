@@ -9,12 +9,13 @@
       background-color:#000000;
     }
     .masked-video {
-      position: relative;
+      position: absolute;
       width: 100%; /* Optional width for video container */
       height: 100%; /* Optional height for video container */
     }
 
     .masked-video video {
+      position: absolute;
       width: 100%; /* Fills the container */
       height: 100%;
       -webkit-mask-box-image: url(#myMask); /* Webkit fallback */
