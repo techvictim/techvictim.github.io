@@ -10,8 +10,8 @@
     }
     .masked-video {
       position: relative;
-      width: 500px; /* Optional width for video container */
-      height: 300px; /* Optional height for video container */
+      width: 100%; /* Optional width for video container */
+      height: 100%; /* Optional height for video container */
     }
 
     .masked-video video {
@@ -29,11 +29,11 @@
 <body>
   <div class="masked-video">
     <video loop autoplay muted>
-      <source src="/video/video.mp4" type="video/mp4">
+      <source src="video.mp4" type="video/mp4">
     </video>
 
     <svg version="1.1" id="myMask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <xlink:href="/images/supervague.svg" />
+      <xlink:href="supervague.svg" />
     </svg>
   </div>
 </body>
