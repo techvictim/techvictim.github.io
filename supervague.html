@@ -25,6 +25,12 @@
     }
   </style>
 </head>
+<script>
+  var video = document.getElementsById("videoID");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("muted", "");
+  video.play();
+</script>
 <body>
   <div class="masked-video">
     <video loop autoplay muted>
