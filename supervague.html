@@ -25,15 +25,9 @@
     }
   </style>
 </head>
-<script>
-  var video = document.getElementsById("videoID");
-  video.setAttribute("playsinline", "");
-  video.setAttribute("muted", "");
-  video.play();
-</script>
 <body>
   <div class="masked-video">
-    <video loop autoplay muted>
+    <video loop autoplay muted playsinline>
       <source src="video.mp4" type="video/mp4">
     </video>
     <svg version="1.1" id="myMask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
