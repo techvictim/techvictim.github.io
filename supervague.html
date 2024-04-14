@@ -8,19 +8,18 @@
     body {
       background-color:#000000;
     }
-    .masked-video {
-      position: absolute;
-      width: 100%; /* Optional width for video container */
-      height: 100%; /* Optional height for video container */
-    }
 
-    .masked-video video {
-      width: 100%; /* Fills the container */
-      height: 100%;
-      -webkit-mask-box-image: url(#myMask); /* Webkit fallback */
-      mask-box-image: url(#myMask); /* Standard syntax */
-    }
-
+    .masked-video  {
+    -webkit-mask-image:url(supervague.svg);
+    -webkit-mask-position:center center;
+    -webkit-mask-repeat:no-repeat;
+    -webkit-mask-size:cover;
+  
+    mask-image:url(supervague.svg);
+    mask-position:center center;
+    mask-repeat:no-repeat;
+    mask-size:cover;
+}
     /* #myMask {
       display: none;  Hide the SVG element (optional)
     }  */
